@@ -31,7 +31,6 @@ class LoginController extends Controller
             return redirect()->route('/');
 
         }else{
-            die('in else');
             session()->flash('message', 'Invalid credentials');
             return redirect()->back();
         }
