@@ -1,132 +1,1236 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
+
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
-        </style>
-
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>STATED.</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slickcarousel@1.8.1/slick/slick.css" />
+        <link href="css/styles.css" type="text/css" rel="Stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+        </script>
     </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
+    <body>
+        <div id="header-hero-container">
+            <header>
+                <div class="flex container">
+                    <a id="logo" href="#">Chaudhary & Co.</a>
+                    <nav>
+                        <button id="nav-toggle" class="hamburger-menu">
+                            <span class="strip"></span>
+                            <span class="strip"></span>
+                            <span class="strip"></span>
+                        </button>
+                        <ul id="nav-menu">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="http://www.google.com" target="_blank">Properties</a></li>
+                            <li><a href="#">Agents</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <?php if(Auth::check()) {?>
+                            <li><a href="{{URL::to('/')}}/logout">Logout</a></li>
+                            <?php } ?>
+                            <li id="close-flyout"><span class="fas fa-times"></span></li>
+                        </ul>
+                    </nav>
                 </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
+            </header>
+            <section id="hero">
+                <div class="fade"></div>
+                <div class="hero-text">
+                    <h1>Buy and sell real estate properties</h1>
+                    <p>A well reputed and trusted real estate agency of Pakistan.</p>
                 </div>
+            </section>
+        </div>
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
+        <section id="properties">
+            <div class="container">
+                <h2>Properties</h2>
+                <div id="properties-slider" class="slick">
+                    <div>
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
+                        <div class="property-details">
+                            <p class="price">Rs. 12,400,000</p>
+                            <span class="beds">6 beds</span>
+                            <span class="baths">4 baths</span>
+                            <span class="sqft">4,250 sqft.</span>
+                            <address>
+                                480 12th, phase 14, Bahria town,rawalpindi
+                            </address>
                         </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
+                    </div>
+                    <div>
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/property_2.jpg" alt="Property 1" />
+                        <div class="property-details">
+                            <p class="price">Rs. 8,400,000</p>
+                            <span class="beds">6 beds</span>
+                            <span class="baths">4 baths</span>
+                            <span class="sqft">4,250 sqft.</span>
+                            <address>
+                                480 12th, Unit 14, DHA, CA
+                            </address>
                         </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
+                    </div>
+                    <div>
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/property_3.jpg" alt="Property 1" />
+                        <div class="property-details">
+                            <p class="price">Rs. 6,400,000</p>
+                            <span class="beds">6 beds</span>
+                            <span class="baths">4 baths</span>
+                            <span class="sqft">4,250 sqft.</span>
+                            <address>
+                                480 12th, Unit 14, New City, CA
+                            </address>
                         </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
+                    </div>
+                    <div>
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/property_4.jpg" alt="Property 1" />
+                        <div class="property-details">
+                            <p class="price">Rs. 9,400,000</p>
+                            <span class="beds">6 beds</span>
+                            <span class="baths">4 baths</span>
+                            <span class="sqft">4,250 sqft.</span>
+                            <address>
+                                480 12th, Unit 14, Wah Model Town, CA
+                            </address>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
+                        <div class="property-details">
+                            <p class="price">Rs. 5,400,000</p>
+                            <span class="beds">6 beds</span>
+                            <span class="baths">4 baths</span>
+                            <span class="sqft">4,250 sqft.</span>
+                            <address>
+                                480 12th, Unit 14, Nova city, CA
+                            </address>
                         </div>
                     </div>
                 </div>
+                <button class="rounded">View All Property Listings</button>
+            </div>
+        </section>
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
+        <section id="agents">
+            <div class="container">
+                <h2>Agents</h2>
+                <p class="large-paragraph">We have highly rated dealers and agents of Pakistan.</p>
+                <div class="flex">
+                    <div class="card">
+                        <img
+                            src="https://scontent.fisb6-2.fna.fbcdn.net/v/t1.6435-9/52851283_255434405361401_3676486576537337856_n.jpg?_nc_cat=102&ccb=1-6&_nc_sid=174925&_nc_eui2=AeHT_eY1ShKK9gy2yUcl3MogkuxKTjr-nYSS7EpOOv6dhOfYJGsdHPX8wdLKzl4Ba9p5z44L__q0AU-cNDTanKQL&_nc_ohc=nl5KgdiAyXYAX_vYq0B&_nc_ht=scontent.fisb6-2.fna&oh=00_AT-sbsO_HLMDNop2X9vZRpgR9ov2BxOCZ4XwYubUDksnyg&oe=62A93212" />
+                        <h3>Hamza Siddique</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://scontent.fisb6-1.fna.fbcdn.net/v/t39.30808-6/275454519_3285313128370452_4479946261481458907_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeEWaGmV2x-zDr6JfC67_ICmKo03nyT4o6UqjTefJPijpc_QT_PljqWax6jJh6gNBq7utaTsT0zVZa3L7iNlyW7D&_nc_ohc=CfIPoflkRmYAX9drKvD&tn=chai6v_3gWNm2HlK&_nc_ht=scontent.fisb6-1.fna&oh=00_AT95iT9Pi_D51HUHf3UJwvgYjaRvMLq2U2PmB9F2A6rBLA&oe=62896C18" />
+                        <h3>Fasih Ur Rehman</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.30808-1/278690870_3829989187225700_7538446131725822027_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-6&_nc_sid=7206a8&_nc_eui2=AeHyWJ7o85HGsMFWe45ZpCcRrjheI9fDpfquOF4j18Ol-sjS6rjVVRDue4Ci2wrnbimrt7PiZZov4NxMiXcvwK9F&_nc_ohc=_W-l2q2MFCgAX-dbar_&_nc_ht=scontent.fisb6-2.fna&oh=00_AT-cYzobJ4fpl7qA6bffBkqTr3uK-qlexSi3LCUauQ9WSg&oe=628820FC" />
+                        <h3>Zargham Ullah Khan</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.30808-1/277554181_5166335143433698_3361523694986897452_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-6&_nc_sid=7206a8&_nc_eui2=AeEZB9y_XrAmK81IEuJhujSb2G3-beE7qUfYbf5t4TupR_-fi_s6-0hUvurreUlJxcBON1-kmZIAAs_ZYsGAGr_a&_nc_ohc=vinNSjXOB64AX84x4Uk&_nc_oc=AQkLnrLuSpNgPJdennimJXcWs2bhhD2-nPakdCbNU6_iEooP7TX3KoPqz4XXORghGno&_nc_ht=scontent.fisb6-2.fna&oh=00_AT8fp4aRLj_4_jxxnk2rsUlWMoDVSYn5fPia19FLbZ46cg&oe=6287B28C" />
+                        <h3>Ali Nadeem</h3>
+                        <p>Real Estate Agent</p>
                     </div>
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                </div>
+            </div>
+        </section>
+
+        <section id="the-best">
+            <div class="flex container">
+                <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
+                <div>
+                    <h2>We Are the Best Real Estate Company</h2>
+                    <p class="large-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi
+                        voluptas impedit Quo suscipit omnis iste velit maxime.</p>
+                    <ul>
+                        <li>Placeat maxime animi minus</li>
+                        <li>Placeat maxime animi minus</li>
+                        <li>Placeat maxime animi minus</li>
+                        <li>Placeat maxime animi minus</li>
+                        <li>Placeat maxime animi minus</li>
+                    </ul>
+                    <button class="rounded">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="flex">
+                    <div>
+                        <div class="fas fa-home"></div>
+                        <div class="services-card-right">
+                            <h3>Search Property</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="fas fa-dollar-sign"></div>
+                        <div class="services-card-right">
+                            <h3>Buy Property</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="fas fa-chart-line"></div>
+                        <div class="services-card-right">
+                            <h3>Investing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="fas fa-building"></div>
+                        <div class="services-card-right">
+                            <h3>List a Property</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="fas fa-search"></div>
+                        <div class="services-card-right">
+                            <h3>Property Locator</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="fas fa-mobile-alt"></div>
+                        <div class="services-card-right">
+                            <h3>Stated Apps</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="testimonials">
+
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="flex">
+                    <div id="form-container">
+                        <h3>Contact Form</h3>
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" />
+                            <label for="email">Email</label>
+                            <input type="text" id="email" />
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" />
+                            <label for="message">Message</label>
+                            <textarea id="message">Write your message here..</textarea>
+                            <button class="rounded">Send Message</button>
+                        </form>
+                    </div>
+                    <div id="address-container">
+                        <label>Address</label>
+                        <address>
+                            A-17, First floor, commercial hub, sector B, Phase 2, New City, Wah Cantt.
+                        </address>
+                        <label>Phone</label>
+                        <a href="#">232-232-2323</a>
+                        <label>Email Address</label>
+                        <a href="#">ouremail@domain.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <small>
+                Copyright &copy; 2019 All rights reserved | This template is made by <span class="fa fa-heart"></span>
+                Buddies
+            </small>
+        </footer>
     </body>
+
 </html>
+
+<style>
+    body {
+        font-family: "Roboto", "Helvetica", "Sans-serif";
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #777;
+        line-height: 1.7;
+    }
+
+    * {
+        outline: none;
+    }
+
+    *:not(.slick-track):not(.slick-list) {
+        transition: 0.4s;
+    }
+
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1,
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-weight: 800;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        color: #f69314;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-family: "Playfair Display", serif;
+    }
+
+    p {
+        margin: 0 0 1rem;
+    }
+
+    button.rounded {
+        background: #f69314;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 30px;
+        padding: 10px 30px;
+        line-height: 1.5;
+        cursor: pointer;
+    }
+
+    p.large-paragraph {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    /* end: global styles */
+    /* start: header styles */
+    #header-hero-container {
+        min-height: 600px;
+        height: calc(100vh);
+        position: relative;
+    }
+
+    header {
+        background: transparent;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+
+    #logo {
+        font-family: "Roboto", "Helvetica", "Sans-serif";
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        top: 4px;
+    }
+
+    .hamburger-menu {
+        background-color: transparent;
+        border: 1px solid #fff;
+        padding: 3px 5px;
+        width: 30px;
+        cursor: pointer;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .hamburger-menu .strip {
+        display: block;
+        height: 1px;
+        background-color: #fff;
+        margin: 4px 0;
+    }
+
+    header ul {
+        list-style-type: none;
+    }
+
+    header ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    #close-flyout {
+        display: none;
+    }
+
+    header ul li a {
+        color: #999;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    header ul.is-sticky li a {
+        color: #000;
+    }
+
+    header ul li a:hover,
+    header ul li a.active {
+        color: #fff;
+    }
+
+    header ul.is-sticky li a:hover,
+    header ul.is-sticky li a.active {
+        color: #f69314;
+    }
+
+    /* end: header styles */
+    /* start: hero section styles */
+    #hero {
+        background: url('https://onclickwebdesign.com/wp-content/uploads/hero_1.jpg') center center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+
+    #hero .fade {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(52, 58, 64, 0.9);
+        z-index: 1;
+    }
+
+    #hero .hero-text {
+        position: absolute;
+        top: 50%;
+        margin: -75px auto 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        color: #fff;
+        width: 500px;
+        text-align: center;
+    }
+
+    #hero .hero-text p {
+        line-height: 1.5em;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    /* end: hero section styles */
+    /* start: how it works styles */
+    #how-it-works {
+        padding: 3rem 0;
+        background: #f8f9fa;
+        text-align: center;
+    }
+
+    #how-it-works h2 {
+        margin-bottom: 3rem;
+    }
+
+    #how-it-works .flex>div {
+        width: 30%;
+    }
+
+    #how-it-works h4 {
+        color: #343a40;
+        margin-top: 1rem;
+    }
+
+    #how-it-works span.fas {
+        color: #f69314;
+        font-size: 35px;
+    }
+
+    /* end: how it works styles */
+    /* start: properties styles */
+    #properties {
+        margin: 4rem 0 8rem;
+        position: relative;
+    }
+
+    #properties h2 {
+        margin-bottom: 3rem;
+    }
+
+    #properties .container {
+        position: relative;
+    }
+
+    #properties .container:before {
+        content: "/";
+        position: absolute;
+        right: 80px;
+        top: 18px;
+        color: #999;
+    }
+
+    #properties-slider a.slick-arrow {
+        color: #000;
+        position: absolute;
+        top: -78px;
+        right: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+    }
+
+    #properties-slider a.slick-prev {
+        right: 80px;
+    }
+
+    #properties-slider .slick-slide {
+        padding: 0 15px;
+    }
+
+    #properties-slider img {
+        width: 100%;
+        display: block;
+    }
+
+    #properties-slider .property-details {
+        padding: 1rem;
+    }
+
+    #properties-slider .price {
+        font-size: 1.2rem;
+        color: #343a40;
+        font-weight: 800;
+        margin: 0 0 0.5rem 0;
+    }
+
+    #properties-slider .property-details span {
+        font-size: 0.8rem;
+        padding-right: 15px;
+    }
+
+    #properties-slider .property-details span.baths {
+        padding-left: 10px;
+    }
+
+    #properties-slider .property-details span.sqft {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    #properties-slider .property-details span.beds,
+    #properties-slider .property-details span.baths {
+        border-right: 1px solid #888;
+    }
+
+    #properties-slider .property-details address {
+        font-size: 0.8rem;
+        font-style: normal;
+        margin-top: 0.5rem;
+    }
+
+    #properties button.rounded {
+        display: block;
+        margin: 2rem auto 0;
+        width: 350px;
+    }
+
+    /* end: properties styles */
+    /* start: agents styles */
+    #agents {
+        margin: 4rem 0 6rem;
+        padding: 0 0 6rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #agents p.large-paragraph {
+        width: 50%;
+        margin-bottom: 4rem;
+    }
+
+    #agents .flex {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #agents .card {
+        width: 32%;
+        background: #f0f0f0;
+        margin-bottom: 2rem;
+    }
+
+    #agents .card img {
+        width: 100%;
+    }
+
+    #agents .card h3 {
+        font-family: "Playfair Display", serif;
+        color: #000;
+    }
+
+    #agents .card h3,
+    #agents .card p {
+        padding-left: 1rem;
+    }
+
+    /* end: agents styles */
+    /* start: best real estate company styles */
+    #the-best {
+        margin: 2rem 0;
+    }
+
+    #the-best .flex>img {
+        width: 47%;
+    }
+
+    #the-best .flex>div {
+        width: 40%;
+    }
+
+    #the-best ul {
+        padding-left: 20px;
+        margin-bottom: 4rem;
+    }
+
+    #the-best ul li {
+        margin: 10px 0;
+    }
+
+    /* end: best real estate company styles */
+    /* start: services styles */
+    #services {
+        background: #f8f9fa;
+        padding: 6rem 0;
+        margin: 8rem 0;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    #services h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    #services .flex {
+        flex-wrap: wrap;
+    }
+
+    #services .flex>div {
+        width: 30%;
+        margin-bottom: 2rem;
+    }
+
+    #services .flex>div .fas {
+        color: #f69314;
+        font-size: 40px;
+        float: left;
+        margin-top: 15px;
+        width: 20%;
+        text-align: center;
+    }
+
+    #services .flex>div .services-card-right {
+        float: right;
+        width: 75%;
+    }
+
+    #services .flex>div a {
+        color: #f69314;
+        text-decoration: none;
+    }
+
+    #services .flex>div a:hover {
+        text-decoration: underline;
+    }
+
+    /* end: services styles */
+    /* start: testimonials styles */
+    #testimonials {
+        margin-bottom: 8rem;
+    }
+
+    #testimonials h2 {
+        text-align: center;
+    }
+
+    #testimonials-slider .slick-slide {
+        text-align: center;
+    }
+
+    #testimonials-slider blockquote {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin: 1rem auto 3rem;
+        max-width: 740px;
+    }
+
+    #testimonials-slider .testimonials-caption {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    #testimonials-slider .testimonials-caption img {
+        float: left;
+        border-radius: 30px;
+        width: 60px;
+    }
+
+    .testimonials-caption p {
+        position: relative;
+        top: 13px;
+        font-size: 1.2rem;
+    }
+
+    #testimonials-slider .slick-arrow {
+        text-decoration: none;
+        position: absolute;
+        font-size: 40px;
+        color: #222;
+        top: 50%;
+        margin-top: -35px;
+        z-index: 1;
+    }
+
+    #testimonials-slider .slick-next {
+        right: 0;
+    }
+
+    /* end: testimonials styles */
+    /* start: contact us styles */
+    #contact {
+        background: #f8f9fa;
+        padding: 4rem 0 8rem;
+    }
+
+    #contact h2 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    #form-container {
+        width: 58%;
+        background: #fff;
+        padding: 3rem;
+        box-sizing: border-box;
+        height: 0%;
+    }
+
+    #form-container h3 {
+        color: #000;
+        font-family: "Playfair Display", serif;
+        margin-bottom: 2rem;
+    }
+
+    #form-container label {
+        display: block;
+        color: #000;
+        margin-top: 1rem;
+    }
+
+    #form-container input,
+    #form-container textarea {
+        display: block;
+        border-radius: 20px;
+        padding: 10px;
+        border: 1px solid #ced4da;
+        width: 100%;
+        box-sizing: border-box;
+        height: 43px;
+        font-family: "Roboto", "Helvetica", "Sans-serif";
+        font-size: 1rem;
+        color: #495057;
+    }
+
+    #form-container textarea {
+        height: 170px;
+        margin-bottom: 2rem;
+        resize: none;
+    }
+
+    #address-container {
+        width: 38%;
+        background: #fff;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        height: 0%;
+    }
+
+    #address-container label {
+        font-weight: 700;
+        display: block;
+        margin-top: 2rem;
+    }
+
+    #address-container label:first-child {
+        margin-top: 0;
+    }
+
+    #address-container address {
+        margin-bottom: 1.5rem;
+        font-style: normal;
+    }
+
+    #address-container a {
+        text-decoration: none;
+        color: #f69314;
+    }
+
+    #address-container a:hover {
+        text-decoration: underline;
+    }
+
+    /* end: contact us styles */
+    /* start: footer styles */
+    footer {
+        background: #333;
+        padding: 8rem 0;
+    }
+
+    footer .flex {
+        padding-bottom: 6rem;
+        border-bottom: 1px solid #777;
+    }
+
+    footer h5 {
+        color: #fff;
+        margin-bottom: 1rem;
+        font-weight: 300;
+    }
+
+    footer h5.follow-us {
+        margin-top: 1rem;
+    }
+
+    footer .footer-about {
+        width: 47%;
+    }
+
+    footer .footer-about p {
+        width: 65%;
+    }
+
+    footer .footer-quick-links {
+        width: 16%;
+    }
+
+    footer .footer-quick-links ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .footer-quick-links ul li {
+        margin: 10px 0;
+    }
+
+    footer .footer-quick-links ul li a {
+        color: #777;
+        text-decoration: none;
+    }
+
+    footer .footer-quick-links ul li a:hover {
+        color: #fff;
+    }
+
+    footer .footer-subscribe {
+        width: 35%;
+    }
+
+    #subscribe-container {
+        position: relative;
+    }
+
+    footer .footer-subscribe input {
+        border-radius: 30px;
+        height: 43px;
+        font-family: "Roboto", "Helvetica", "Sans-serif";
+        border: 1px solid #6c757d;
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 10px;
+        color: #fff;
+        box-sizing: border-box;
+        width: 80%;
+    }
+
+    footer button.right-rounded {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background: #f69314;
+        font-size: 16px;
+        color: #000;
+        padding: 10px 30px 9px;
+        line-height: 1.5;
+        cursor: pointer;
+        border: none;
+        position: absolute;
+        right: 0;
+    }
+
+    footer button.right-rounded:hover {
+        background: #fff;
+    }
+
+    footer .footer-subscribe ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .footer-subscribe ul li {
+        display: inline-block;
+        margin: 0 16px;
+    }
+
+    footer .footer-subscribe ul li:first-child {
+        margin-left: 0;
+    }
+
+    footer .footer-subscribe ul li a {
+        text-decoration: none;
+        color: #777;
+    }
+
+    footer .footer-subscribe ul li a:hover {
+        color: #fff;
+    }
+
+    footer small {
+        margin-top: 3rem;
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    footer small a {
+        color: #777;
+        text-decoration: none;
+    }
+
+    footer small a:hover {
+        color: #fff;
+    }
+
+    /* end: footer styles */
+    /* start: media queries */
+    @media (max-width: 991px) {
+        #logo {
+            top: 1px;
+        }
+
+        #nav-toggle {
+            display: block;
+        }
+
+        nav ul {
+            position: fixed;
+            background: #fff;
+            right: -100%;
+            top: 0;
+            margin: 0;
+            padding: 2rem;
+            height: 100%;
+            width: 300px;
+            box-sizing: border-box;
+            box-shadow: 5px 0 10px 3px #999;
+        }
+
+        #close-flyout {
+            position: absolute;
+            right: 2rem;
+            top: 1.5rem;
+            font-size: 30px;
+            color: #777;
+            cursor: pointer;
+            display: block;
+            line-height: 1;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 20px 0;
+        }
+
+        nav ul li:first-child {
+            margin-top: 50px;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+            color: #212529;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            color: #f69314;
+        }
+    }
+
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        .large-paragraph {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        .container {
+            max-width: 540px;
+        }
+
+        #hero .hero-text {
+            width: 400px;
+        }
+
+        #agents .card {
+            width: 49%;
+        }
+
+        #the-best .flex>img {
+            display: none;
+        }
+
+        #the-best .flex>div {
+            width: 100%;
+        }
+
+        #testimonials-slider p {
+            font-size: 1.2rem;
+        }
+
+        #properties .container:before {
+            top: 2px;
+            font-size: 0.85rem;
+        }
+
+        #properties-slider a.slick-arrow {
+            font-size: 0.85rem;
+        }
+
+        #properties button.rounded {
+            width: 300px;
+        }
+
+        #services .flex>div {
+            width: 48%;
+        }
+
+        #contact .flex {
+            flex-wrap: wrap;
+        }
+
+        #form-container {
+            width: 100%;
+            padding: 2rem;
+        }
+
+        #address-container {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        footer {
+            padding: 6rem 0;
+        }
+
+        footer .flex {
+            flex-wrap: wrap;
+        }
+
+        footer .flex>div {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        footer .flex>div:first-child {
+            margin-top: 0;
+        }
+
+        footer .footer-about p {
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        footer .footer-subscribe input {
+            width: 90%;
+        }
+
+        footer h5.follow-us {
+            margin-top: 2rem;
+        }
+    }
+
+    @media (max-width: 500px) {
+        #hero .hero-text {
+            width: 330px;
+        }
+
+        #agents {
+            margin: 4rem 0 3rem;
+            padding: 0 0 3rem;
+        }
+
+        #agents .card {
+            width: 100%;
+        }
+
+        #agents p.large-paragraph {
+            width: 100%;
+        }
+
+        #how-it-works .flex {
+            display: block;
+        }
+
+        #how-it-works .flex>div {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        #properties button.rounded {
+            width: 250px;
+        }
+
+        #services {
+            padding: 4rem 0 3rem;
+            margin: 4rem 0;
+        }
+
+        #services .flex>div {
+            width: 100%;
+        }
+
+        #testimonials {
+            margin-bottom: 4rem;
+        }
+
+        #testimonials-slider p {
+            font-size: 1rem;
+        }
+
+        #testimonials-slider .slick-arrow {
+            display: none !important;
+        }
+
+        #contact {
+            padding: 4rem 0;
+        }
+
+        #contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        #form-container {
+            padding: 1.5rem;
+        }
+
+        footer {
+            padding: 4rem 0;
+        }
+    }
+
+    @media (max-width: 400px) {
+        #hero .hero-text {
+            max-width: 275px;
+            width: 100%;
+        }
+
+        #properties button.rounded {
+            max-width: 250px;
+            width: 100%;
+        }
+
+        nav ul {
+            width: 200px;
+        }
+    }
+</style>
