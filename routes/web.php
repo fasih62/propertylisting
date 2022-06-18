@@ -22,3 +22,7 @@ Route::get('/home','App\Http\Controllers\HomeController@index')->middleware('aut
   Route::get('/register','App\Http\Controllers\Auth\LoginController@show_signup_form')->name('register');
   Route::post('/register','App\Http\Controllers\Auth\LoginController@process_signup');
   Route::get('/logout','App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+  
+  Route::get('auth/google','App\Http\Controllers\GoogleController@redirectToGoogle');
+Route::get('auth/google/callback', 'App\Http\Controllers\GoogleController@handleGoogleCallback');
